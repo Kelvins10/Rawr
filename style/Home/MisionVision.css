@@ -1,0 +1,52 @@
+/* Misión Visión */
+
+.mision-vision{
+    padding-bottom: 10px;
+    background: #f2f2f2;
+}
+
+.mision-vision-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mision-vision-ind{
+    width: 45%;
+    text-align: center;
+}
+
+.mision-vision-ind img{
+    width: 90%;
+}
+
+.mision-vision-ind h3{
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.mision-vision-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+@media screen and (max-width: 900px){
+    /* Misión Visión */
+    .mision-vision-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .mision-vision-ind{
+        width: 90%;
+        text-align: center;
+    }
+
+    .mision-vision-ind:nth-child(1), .mision-vision-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .mision-vision-ind img{
+        width: 90%;
+    }
+}

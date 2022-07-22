@@ -1,0 +1,57 @@
+.address{
+    /* background: #f2f2f2; */
+    padding: 30px 150px 30px 150px;
+    /* border-top: 1px solid #000066; */
+}
+
+.contenedor-address{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding-top: 30px;
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+.address-cnt-ind{
+    width: 45%;
+    text-align: center;
+}
+
+.address-cnt-ind h2{
+    margin: 5px 0;
+    font-size: var(--h2-font-size);
+    color: red;
+}
+
+.address-cnt-ind p{
+    font-weight: 300;
+    text-align: justify;
+    padding-bottom: 5px;
+}
+
+.address-cnt-ind iframe{
+    width: 100%;
+}
+
+@media screen and (max-width: 900px){
+    /* Misión Visión */
+    .contenedor-address{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .address{
+        /* background: #f2f2f2; */
+        padding: 30px 50px 30px 50px;
+    }
+
+    .address-cnt-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .address-cnt-ind:nth-child(1), .address-cnt-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+}

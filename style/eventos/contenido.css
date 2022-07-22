@@ -1,0 +1,71 @@
+.content-eventos{
+    padding: 30px 60px;
+    display: flex;
+}
+
+.content-eventos .menu-eventos{
+    width: 20%;
+}
+
+.content-eventos .menu-eventos img {
+    width: 100%;
+}
+
+.content-eventos .info-general-eventos{
+    width: 100%;
+}
+
+.content-eventos .info-general-eventos img {
+    width: 100%;
+}
+
+.nav-eventos::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.nav-eventos ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    /* position: relative; */
+}
+
+.nav-eventos li{
+    list-style: none;
+}
+
+.nav-eventos a{
+    background-color: black;
+    float: left;
+    margin-right: 40px;
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+.nav-eventos li ul{
+    /* float: left; */
+    display: inline-block;
+    background-color: black;
+    margin: 0 5px;
+    position:relative;
+}
+
+.nav-eventos li a ul {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: fixed;
+}
+
+.nav-eventos a ul {
+    position: absolute;
+}
+
+/* .nav-eventos li ul {
+    display: none;
+} */

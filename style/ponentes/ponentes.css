@@ -1,0 +1,55 @@
+.ponentes{
+    display: flex;
+    padding: 30px 100px 60px 100px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+.info-keynote-speakers {
+    width: 30%;
+    text-align: justify;
+    margin: 20px;
+}
+
+.info-keynote-speakers h2{
+    color: red;
+    padding-bottom: 20px;
+}
+
+.cards-keynote-speakers {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+@media screen and (max-width: 1030px){
+    .ponentes{
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px 10px 30px 10px;
+    }
+    .info-keynote-speakers{
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .cards-keynote-speakers{
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .info-keynote-speakers h2{
+        text-align: center;
+    }
+
+    .cards-keynote-speakers {
+        border-left: none;
+    }
+}

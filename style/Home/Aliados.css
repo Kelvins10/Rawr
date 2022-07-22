@@ -1,0 +1,48 @@
+.aliados {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: auto;
+    margin-bottom: 4rem;
+    background-color: white;
+    padding-top: 0;
+}
+
+.aliados-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.aliados-box {
+    width: max-content;
+    overflow: hidden;
+}
+
+.aliados-box > img {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    padding: 0.5rem;
+}
+
+@media (min-width: 678px) {
+    .aliados{
+        padding: 0 2rem;
+    }
+    .aliados h2 {
+        text-align: start;
+    }
+    .aliados-box img {
+        padding: 0;
+    }
+}
+
+@media (min-width: 1000px) {
+    .aliados-container {
+        justify-content: space-evenly;
+    }
+}

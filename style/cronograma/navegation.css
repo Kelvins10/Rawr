@@ -1,0 +1,146 @@
+.header {
+    /* background-color: #0769e9; */
+    background: #22c1c3;  /* fallback for old browsers */
+    background: linear-gradient(to right, #fdbb2d93, #22c0c397), url(../../img/cronograma/Portada.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fdbb2d93, #22c0c397), url(../../img/cronograma/Portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background-size: cover;    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background-attachment: fixed; */
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 150;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-evenly;
+  
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+  }
+  
+  .submenu {  
+    list-style-type: none;
+  }
+
+  .nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    width: max-content;
+  }
+  
+  .nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 10px;
+  }
+  
+  .nav-menu-link:hover {
+    background-color: #4d0686;
+    transition: 0.5s;
+  }
+
+  /* .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background-color: #4d0686;
+    transition: 0.5s;
+  } */
+  
+  /* TOGGLE */
+  .nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+  
+    display: none;
+  }
+
+
+  /* MOBILE */
+  @media (max-width: 1302px) {
+    .nav {
+      justify-content: space-between;
+    }
+    body {
+      padding-top: 60px;
+    }
+  
+    .header {
+      height: 60px;
+      background: #4d0686;
+    }
+  
+    .logo {
+      font-size: 25px;
+      padding: 0 20px;
+      line-height: 60px;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-color: #4d0686;
+      position: fixed;
+      top: 60px;
+      width: 100%;
+      padding: 20px 0;
+  
+      height: calc(100% - 60px);
+      overflow-y: auto;
+  
+      left: 100%;
+      transition: left 0.3s;
+    }
+  
+    .nav-menu-item {
+      line-height: 70px;
+    }
+  
+    .nav-menu-link:hover {
+      background: none;
+      color: #83c5f7;
+    }
+
+    /* .nav-menu-link:hover,
+    .nav-menu-link_active {
+      background: none;
+      color: #83c5f7;
+    } */
+  
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-menu_visible {
+      left: 0;
+    }
+  
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+    }
+  }

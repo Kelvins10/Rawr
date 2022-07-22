@@ -1,0 +1,70 @@
+/* tarifa */
+
+.frase-container{
+    display: flex;
+    text-align: center;
+    padding: 20px 250px;
+}
+
+.frase_container{
+    width: 100%;
+    margin: 30px;
+    align-items: center;
+    align-content: center;
+}
+
+.frase_container h2{
+    color: #000066;
+    font-size: var(--h2-font-size);
+}
+
+.frase{
+    margin: 20px 0;
+}
+
+.frase-tag{
+    /* font-weight: 300; */
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.img1{
+    width: 90%;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1165px) {
+    .frase-container{
+        padding: 10px 50px;
+    }
+}
+
+@media screen and (max-width: 1015px) {
+    .frase-container{
+        padding: 10px 10px;
+    }
+
+    .img1{
+        padding-bottom: 10px;
+    }
+    
+    .frase{
+        margin: 0;
+    }
+}
+
+/* @media (max-width: 906px) {
+    .frase-container{
+        padding: 20px 10px;
+    }
+
+    .img1{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .frase_container{
+        width: 100%;
+    }
+} */

@@ -1,0 +1,69 @@
+.staff-card{
+    width: 100%;
+    max-width: 300px;
+    background-color: #ffdfd0;
+    padding: 2rem 1.5rem;
+    margin: 1rem 0; /**/
+    text-align: center;
+    border-radius: var(--br-radius-sm);
+}
+
+.card-text h3{
+    color: red;
+    font-size: 1.25rem;
+    padding: 1rem 0 1.5rem;
+}
+
+.staff-card .image {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+}
+
+.staff-card .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.staff-card .card-text {
+    width: 100%;
+    background-color: white;
+    padding: 1rem 0.2rem;
+    margin: auto;
+}
+
+.staff-card .card-text p{
+    text-align: justify;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.staff-card img {
+    transition: all ease .4s;
+}
+
+.staff-card .image:hover img {
+    transform: scale(1.07);
+    border-radius: .7rem .7rem 0 0;  
+}
+
+@media screen and (max-width: 700px){
+    .staff-card{
+    max-width: 200;
+    }
+}
+
+@media screen and (max-width: 683px){
+    .staff-card{
+    max-width: 90%;
+    }
+    .staff-card .card-text p{
+        text-align: center;
+    }
+}

@@ -1,0 +1,106 @@
+.medidas-container{
+    padding-bottom: 30px;
+    margin: 10px;
+    padding: 20px 100px 10px 100px;
+}
+
+.protocolos_container{
+    text-align: center;
+    width: 90%;
+}
+
+.subtitulo{
+    text-align: center;
+}
+
+.protocolos-paragraph{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+
+.protocolos-container{
+    display: grid;
+    gap: 2em;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.medidas-container h2{
+    color: #000066;
+    font-size: var(--h2-font-size);
+}
+
+.medidas-padding{
+    padding: 0;
+    transition: padding 0.2s;
+    border: 1px solid #00BFFE;
+    border-radius: 6px;
+}
+
+.medidas-padding--add{
+    padding-bottom: 30px;
+}
+
+.medidas-answer{
+    padding: 0 30px 0;
+    overflow: hidden;
+}
+
+.medidas-title{
+    display: flex;
+    font-size: 20px;
+    padding: 30px 0 30px;
+    cursor: pointer;
+    color: #001A49;
+    justify-content: space-between;
+}
+
+.medidas-arrow{
+    border-radius: 50%;
+    background-color: #F2F2F2;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    transition: transform .3s;
+    align-self: flex-end;
+}
+
+.medidas-arrow--rotate{
+    transform: rotate(180deg);
+}
+
+.medidas-show{
+    text-align: justify;
+    height: 0;
+}
+
+/* utec */
+
+.medidas-UTEC{
+    padding-bottom: 30px;
+    margin: 10px;
+    padding: 20px 100px 10px 100px;
+}
+
+.medidas-img {
+    display: block;
+}
+
+@media (max-width: 1100px) {
+    .medidas-container{
+        padding: 20px 20px 20px 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    .medidas-container{
+        padding: 20px 0px;
+    }
+    .medidas-UTEC{
+        padding: 20px 10px 20px 10px;
+    }
+}
