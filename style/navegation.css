@@ -37,8 +37,6 @@ a{
 	display: flex;
 	align-items: center;
 	padding: 12px 0;
-	border-radius: 4px;
-    margin: 3px;
 }
 .header .logo{
 	padding: 0 15px;
@@ -91,7 +89,7 @@ a{
 
 .header .menu > .menu-item:hover > a .plus:before,
 .header .menu > .menu-item:hover > a .plus:after{
-   background-color: #00bffe;
+   background-color: blue;
 }
 .header .menu > .menu-item > a .plus:after{
    transform: translate(-50%,-50%) rotate(-90deg);	
@@ -108,7 +106,7 @@ a{
 	top:100%;
 	background-color: #ffffff;
 	padding: 10px 0;
-	border-top: 3px solid #00bffe;
+	border-top: 3px solid blue;
 	transform: translateY(10px);
 	transition: all 0.3s ease;
 	opacity:0;
@@ -150,8 +148,8 @@ a{
 	display: block;
 	height: 3px;
 	width: 24px;
-	background-color: #231f20;
-    position: relative;
+	background-color: red;
+    position: absolute;
 }
 .header .open-nav-menu span:before,
 .header .open-nav-menu span:after{
@@ -160,7 +158,7 @@ a{
 	left:0;
 	width: 100%;
 	height: 100%;
-	background-color: #231f20;
+	background-color: red;
 	box-sizing: border-box;
 }
 .header .open-nav-menu span:before{
@@ -208,7 +206,7 @@ a{
 		height: 100%;
 		top:0;
 		overflow-y: auto;
-		background-color: #231f20;
+		background-color: black;
 		z-index: 1000;
 		padding: 15px 0;
 		transition: all 0.5s ease;
@@ -229,10 +227,10 @@ a{
 	.header .menu > .menu-item > a{
 		color: white;
 		padding: 12px 15px;
-		border-bottom: 1px solid #333333;
+		border-bottom: 1px solid white;
 	}
 	.header .menu > .menu-item:first-child > a{
-	    border-top: 1px solid #333333;	
+	    border-top: 1px solid white;	
 	}
 	.header .menu > .menu-item > a .plus:before, 
 	.header .menu > .menu-item > a .plus:after{
@@ -259,7 +257,7 @@ a{
 	.header .menu > .menu-item > .sub-menu > .menu-item > a{
 		padding: 12px 45px;
 		color: #ffffff;
-		border-bottom: 1px solid #333333;
+		border-bottom: 1px solid white;
 	}
 	.header .close-nav-menu,
 	.header .open-nav-menu{
